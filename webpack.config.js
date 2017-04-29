@@ -15,7 +15,7 @@ module.exports = env => {
       publicPath: '/build/',
       pathinfo: ifNotProd(),
     },
-    devtool: ifProd('source-map', 'eval'),
+    devtool: ifProd('eval', 'source-map'),
     devServer: {
       port: 8080,
       historyApiFallback: true
